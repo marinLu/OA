@@ -1,0 +1,42 @@
+$blue: #3190e8;  
+$bordercolor: #e4e4e4;
+
+// 背景图片设置
+@mixin backimg($url) { 
+	background-image: url($url);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+//定位上下左右居中
+@mixin center {  
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//定位上下居中
+@mixin center-top {  
+	position: absolute;
+	top: 50%;
+    transform: translateY(-50%);
+}
+// flex
+@mixin display ($dis) {
+    -webkit-display:$dis;     
+       -moz-display:$dis;
+            display:$dis;
+}
+// border
+@mixin border ($dis) {
+    -webkit-border:$dis;     
+       -moz-border:$dis;
+            border:$dis;
+}
+
+@mixin border-right ($dis) {
+    -webkit-border-right:$dis;     
+       -moz-border-right:$dis;
+            border-right:$dis;
+}
